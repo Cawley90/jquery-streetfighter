@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  
+
   $('.ryu').mouseenter(function() {
     $('.ryu-still').hide();
     $('.ryu-ready').show();
@@ -34,25 +34,29 @@ $(document).ready(function() {
   
   });
 
+
   $(document).keydown(function(e){
-  	if(e.which == 88) {
-  	playSong();	
-  	$('.ryu-ready').hide();
-   	$('.ryu-cool').show();
-   	
-  		}
-	  
-  	})
-
-  .keyup(function(e){
-  	if(e.which == 88) {
-  		$("#ssj3")[0].pause();
-		$('.ryu-cool').hide();
-  		$('.ryu-ready').show();
-
-  	}
+   	if(e.which == 88) {
+   	playSong();	
+   	$('.ryu-ready').hide();
+    	$('.ryu-cool').show();
+    	$('.canon').show();
+    	
+   		}
+ 	  
+   	})
+ 
+   .keyup(function(e){
+   	if(e.which == 88) {
+   		$("#ssj3")[0].pause();
+ 		$('.ryu-cool').hide();
+ 		$('.canon').hide();
+   		$('.ryu-ready').show();
+ 
+   	}
   	
   	});
+
 
 });
 
